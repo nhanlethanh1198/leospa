@@ -128,3 +128,104 @@
 	margin-left: 1rem;
 	color: inherit;
 }
+
+.menu__collapse {
+	display: none;
+	position: relative;
+	top: -5px;
+	font-size: 2rem;
+	color: var(--primary-color);
+	cursor: pointer;
+	padding-right: 1rem;
+}
+
+/* Responsive for Block Header */
+@media screen and (max-width: 1439px),
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+	.header__content {
+		padding: 6rem;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header__image,
+	.menu {
+		display: none;
+	}
+	.menu__collapse {
+		display: block;
+		float: right;
+	}
+	.header__top {
+		justify-content: space-between;
+	}
+	.header__content {
+		padding-top: 7rem;
+	}
+	.header__content-title {
+		font-size: 4rem;
+	}
+	.header__content-cta {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	.header__content-cta > a:first-child {
+		margin-right: 0;
+		margin-bottom: 2.5rem;
+	}
+}
+
+/* About */
+.about__inner {
+	position: relative;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.about__flower1 {
+	position: absolute;
+	max-width: 13.5rem;
+	top: 0;
+	left: 0;
+}
+.about__flower2 {
+	position: absolute;
+	max-width: 7rem;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.about__content {
+	position: relative;
+	z-index: 5;
+	margin: 0 auto;
+	text-align: center;
+}
+.about__content img {
+	margin: 0 auto 4rem;
+	max-width: 8rem;
+}
+.about__content h3 {
+	text-transform: uppercase;
+	color: var(--gray-light);
+	font-weight: 300;
+	font-size: 2rem;
+	margin-bottom: 4rem;
+}
+.heading__desc {
+	color: var(--gray-light);
+	font-size: 1.5rem;
+	line-height: 1.6;
+	max-width: 65rem;
+	margin: 0 auto;
+}
+/* Reponsive for Block About */
+@media screen and (max-width: 767px) {
+	.about__inner {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+	.about__content {
+		max-width: 72%;
+	}
+}
