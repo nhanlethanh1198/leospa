@@ -9,6 +9,7 @@
 	--secondary-font: "Rufina";
 	--wrapper: 192rem;
 	--container: 117rem;
+	--bg-gray: #e4cdd557;
 }
 *,
 *:before,
@@ -22,7 +23,7 @@ body {
 	font-family: var(--primary-font);
 	font-weight: 300;
 	color: var(--gray-dark);
-	background-color: var(--white);
+	background-color: var(--bg-gray);
 	margin: 0;
 }
 img {
