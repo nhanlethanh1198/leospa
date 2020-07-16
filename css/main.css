@@ -608,3 +608,13 @@
 		padding: 2rem;
 	}
 }
+/* Block Blog */
+.blog .popular__link .title {
+	margin-top: 1.5rem;
+}
+.blog .category {
+	text-transform: uppercase;
+	color: var(--gray-light);
+	margin-top: 3.5rem;
+	font-size: 1.2rem;
+}
